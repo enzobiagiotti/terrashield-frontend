@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300&family=DM+Sans:wght@300;400;500&display=swap');
 
-/*  VARIÁVEIS  */
+/* VARIÁVEIS */
 :root {
   --areia:         #F5EFE6;
   --areia-escura:  #E8DDD0;
@@ -23,7 +23,7 @@
   --sombra:        0 2px 24px rgba(44, 62, 48, 0.08);
 }
 
-/*  BASE  */
+/* BASE */
 body {
   background-color: var(--areia);
   color: var(--floresta);
@@ -52,7 +52,7 @@ section {
   margin: 0 auto;
 }
 
-/*  NAVEGAÇÃO  */
+/* NAVEGAÇÃO */
 nav {
   position: fixed;
   top: 0;
@@ -75,6 +75,15 @@ nav {
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--floresta);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-logo img {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
 }
 
 .nav-links {
@@ -108,7 +117,7 @@ nav {
   background-color: var(--floresta-mid) !important;
 }
 
-/*  HERO  */
+/* HERO */
 #hero {
   min-height: 100vh;
   padding: calc(var(--nav-h) + 5rem) 2rem 5rem;
@@ -231,7 +240,7 @@ nav {
   letter-spacing: 0.08em;
 }
 
-/*  SEÇÃO — COMPARTILHADO  */
+/* SEÇÃO — COMPARTILHADO */
 .secao-label {
   display: block;
   font-size: 0.7rem;
@@ -272,7 +281,7 @@ nav {
   max-width: 48ch;
 }
 
-/*  SEÇÃO 1 — PROBLEMA  */
+/* SEÇÃO 1 — PROBLEMA */
 #problema {
   background:
     radial-gradient(ellipse 55% 60% at 90% 55%, rgba(199,98,74,0.12) 0%, transparent 100%),
@@ -322,7 +331,7 @@ nav {
   max-width: none;
 }
 
-/*  SEÇÃO 2 — TECNOLOGIA  */
+/* SEÇÃO 2 — TECNOLOGIA */
 #tecnologia {
   background:
     radial-gradient(ellipse 55% 55% at 90% 0%,   rgba(184,212,224,0.45) 0%, transparent 100%),
@@ -371,7 +380,7 @@ nav {
   max-width: none;
 }
 
-/*  SEÇÃO 3 — OBJETIVOS  */
+/* SEÇÃO 3 — OBJETIVOS */
 #objetivos {
   background:
     radial-gradient(ellipse 45% 55% at 5%  45%, rgba(122,175,196,0.08) 0%, transparent 100%),
@@ -443,7 +452,7 @@ nav {
   flex-shrink: 0;
 }
 
-/*  SEÇÃO 4 — PÚBLICO-ALVO  */
+/* SEÇÃO 4 — PÚBLICO-ALVO */
 #publico {
   background:
     radial-gradient(ellipse 50% 55% at -5% 50%, rgba(200,168,130,0.22) 0%, transparent 100%),
@@ -507,7 +516,7 @@ nav {
   max-width: none;
 }
 
-/*  SEÇÃO 5 — BENEFÍCIOS  */
+/* SEÇÃO 5 — BENEFÍCIOS */
 #beneficios {
   background:
     radial-gradient(ellipse 50% 55% at 90% 28%, rgba(199,98,74,0.13) 0%, transparent 100%),
@@ -605,7 +614,7 @@ nav {
   letter-spacing: 0.08em;
 }
 
-/*  SEÇÃO 6 — APLICAÇÃO  */
+/* SEÇÃO 6 — APLICAÇÃO */
 #aplicacao {
   background:
     radial-gradient(ellipse 50% 50% at 90% 0%,   rgba(184,212,224,0.35) 0%, transparent 100%),
@@ -663,7 +672,7 @@ nav {
   max-width: none;
 }
 
-/*  FOOTER  */
+/* FOOTER */
 footer {
   background-color: var(--floresta);
   border-top: 1px solid rgba(255,255,255,0.06);
@@ -706,7 +715,7 @@ footer {
   font-weight: 400;
 }
 
-/*  RESPONSIVO  */
+/* RESPONSIVO */
 @media (max-width: 768px) {
 
   .nav-links { display: none; }
